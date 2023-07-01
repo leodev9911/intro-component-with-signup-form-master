@@ -10,13 +10,16 @@ const handleInputEmailError = () => {
     const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
 
     if (isValid) {
-        errorEmailMessage.classList.add('hidden');
+        errorEmailMessage.classList.add('hidden')
+        errorIcon[2].classList.add('hidden')
     } else if (!isValid) {
-        errorEmailMessage.classList.remove('hidden');
+        errorEmailMessage.classList.remove('hidden')
+        errorIcon[2].classList.remove('hidden')
     } 
 
     if (inputEmail.value === '') {
-        errorEmailMessage.classList.add('hidden');
+        errorEmailMessage.classList.add('hidden')
+        errorIcon[2].classList.add('hidden')
     }
 
 }
